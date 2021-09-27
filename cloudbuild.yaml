@@ -4,4 +4,4 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/bunker-serve/github.com/rodri10-isw/bunker:$SHORT_SHA']
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['beta', 'run', 'deploy', 'bunker-serve', '--region=europe-west1', '--platform=managed', '--image=gcr.io/bunker-serve/github.com/rodri10-isw/bunker:$SHORT_SHA']
+  args: ['beta', 'run', 'deploy', 'bunker-serve', '--region=us-central1', '--platform=managed', '--image=gcr.io/bunker-serve/github.com/rodri10-isw/bunker:$SHORT_SHA']
