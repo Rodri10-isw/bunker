@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/bunker-serve/github.com/rodri10-isw/bunker:$SHORT_SHA', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/bunker-serve/github.com/rodri10-isw/bunker:$SHORT_SHA', '.']
+  
+ 
