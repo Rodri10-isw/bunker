@@ -1,8 +1,7 @@
-const http=require('http')
-const server=http.createServer((req,res)=>{
-    console.log("Nueva coneccion")
-    res.end("Hola Nane")
-})
+const { Server } = require("net");
+const server = new Server();
 
-const PORT = process.env.PORT || 8080
-server.listen(PORT,()=> console.log("Escochando"))
+
+server.listen({ port: 8080 }, () => {
+     console.log("escuchando en el puerto 8080");
+});
