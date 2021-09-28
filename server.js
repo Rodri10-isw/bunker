@@ -11,9 +11,6 @@ server.on("connection", (socket) => {
                 console.log("Cadena " + [i] + ": " + arrayDeCadenas[i]);
            }
      });
-     socket.on("close", () => {
-          console.log("Dispositivo fuera del server" + socket.remoteAddress)
-     });
 });
 
 server.listen({ port: 8080 }, () => {
