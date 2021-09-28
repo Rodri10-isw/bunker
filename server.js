@@ -19,5 +19,5 @@ server.on("connection", (socket) => {
 });
 
 server.listen({ port: 8080 }, () => {
-     console.log("Server en el puerto 8080");
+     console.log("Server en el puerto 8000");
 })
