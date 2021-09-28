@@ -13,6 +13,6 @@ const server = new Server();
      });
 });*/
 
-server.listen({ port: 8000 }, () => {
-     console.log("Puerto para el GPS EN  8000");
+server.listen({ port: 8080 }, () => {
+     console.log("Puerto para el GPS EN  8080");
 });
