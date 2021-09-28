@@ -1,6 +1,6 @@
 const { Server } = require("net");
 const server = new Server();
-server.on("connection", (socket) => {
+/*server.on("connection", (socket) => {
      console.log('Nueva coneccion de: ', socket.remoteAddress + " " + socket.remotePort);
      socket.setEncoding("utf-8");
      socket.on("data", (data) => {
@@ -11,8 +11,8 @@ server.on("connection", (socket) => {
                 console.log("Cadena " + [i] + ": " + arrayDeCadenas[i]);
            }
      });
-});
+});*/
 
-server.listen({ port: 8080 }, () => {
-     console.log("escuchando en el puerto  gps 8000");
+server.listen({ port: 8000 }, () => {
+     console.log("Puerto para el GPS EN  8000");
 });
